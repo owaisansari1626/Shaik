@@ -9,7 +9,7 @@ from datetime import datetime, date
 class ActivityService:
     @staticmethod
     async def create_activity(db: AsyncSession, activity_in: ActivityCreate, user_id: int) -> Activity:
-        activity_data = activity_in.dict(exclude={"recurrence_rule"})
+        activity_data = activity_in.model_dump(exclude={"recurrence_rule"})
         activity_data["user_id"] = user_id
         activity = Activity(**activity_data)  # type: ignore
         db.add(activity)
@@ -34,7 +34,7 @@ class ActivityService:
     async def update_activity(db: AsyncSession, activity_id: int, activity_in: ActivityUpdate, user_id: int) -> Activity:
         activity = await ActivityService.get_activity(db, activity_id, user_id)
         
-        update_data = activity_in.dict(exclude_unset=True)
+        update_data = activity_in.model_dump(exclude_unset=True)
         for field, value in update_data.items():
             setattr(activity, field, value)
             
