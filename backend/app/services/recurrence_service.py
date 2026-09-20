@@ -96,7 +96,7 @@ class RecurrenceService:
                             "is_override": False,
                             "is_deleted": False
                         }
-                        new_occ = ActivityOccurrence(**occ_data)
+                        new_occ = ActivityOccurrence(**occ_data)  # type: ignore
                         new_occurrences.append(new_occ)
 
                 curr += datetime.timedelta(days=1)
@@ -133,7 +133,7 @@ class RecurrenceService:
             "is_recurring": True,
             "icon": activity.icon
         }
-        new_act = Activity(**act_data)
+        new_act = Activity(**act_data)  # type: ignore
         db.add(new_act)
         await db.flush() # get new_act.id
         
@@ -156,7 +156,7 @@ class RecurrenceService:
             "start_date": occ.date,
             "end_date": None
         }
-        new_rule = RecurrenceRule(**rule_data)
+        new_rule = RecurrenceRule(**rule_data)  # type: ignore
         db.add(new_rule)
         
         # Delete future untouched occurrences of the old rule so the new rule regenerates them

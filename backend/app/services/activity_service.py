@@ -10,7 +10,8 @@ class ActivityService:
     @staticmethod
     async def create_activity(db: AsyncSession, activity_in: ActivityCreate, user_id: int) -> Activity:
         activity_data = activity_in.dict(exclude={"recurrence_rule"})
-        activity = Activity(**activity_data, user_id=user_id)
+        activity_data["user_id"] = user_id
+        activity = Activity(**activity_data)  # type: ignore
         db.add(activity)
         await db.commit()
         await db.refresh(activity)

@@ -10,7 +10,7 @@ class TaskService:
     async def create_task(db: AsyncSession, task_in: TaskCreate, user_id: int) -> Task:
         data = task_in.dict()
         data["user_id"] = user_id
-        task = Task(**data)
+        task = Task(**data)  # type: ignore
         db.add(task)
         await db.commit()
         await db.refresh(task)

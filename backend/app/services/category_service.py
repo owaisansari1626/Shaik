@@ -7,12 +7,13 @@ from app.schemas.category import CategoryCreate, CategoryUpdate
 class CategoryService:
     @staticmethod
     async def create_category(db: AsyncSession, category_in: CategoryCreate, user_id: int) -> Category:
-        category = Category(
-            name=category_in.name,
-            description=category_in.description,
-            icon=category_in.icon,
-            user_id=user_id
-        )
+        data = {
+            "name": category_in.name,
+            "description": category_in.description,
+            "icon": category_in.icon,
+            "user_id": user_id
+        }
+        category = Category(**data)  # type: ignore
         db.add(category)
         await db.commit()
         await db.refresh(category)

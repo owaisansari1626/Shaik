@@ -11,12 +11,11 @@ class ScheduleService:
     @staticmethod
     async def create_occurrence(db: AsyncSession, occurrence_in: ActivityOccurrenceCreate, user_id: int) -> ActivityOccurrence:
         # Create an occurrence manually
-        occ = ActivityOccurrence(
-            **occurrence_in.dict(), 
-            user_id=user_id,
-            original_start_time=occurrence_in.start_time,
-            original_end_time=occurrence_in.end_time
-        )
+        data = occurrence_in.dict()
+        data["user_id"] = user_id
+        data["original_start_time"] = occurrence_in.start_time
+        data["original_end_time"] = occurrence_in.end_time
+        occ = ActivityOccurrence(**data)  # type: ignore
         db.add(occ)
         await db.commit()
         await db.refresh(occ)

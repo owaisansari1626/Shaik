@@ -1,6 +1,6 @@
 from fastapi import APIRouter, Depends, HTTPException
 from sqlalchemy.ext.asyncio import AsyncSession
-from typing import Any, List
+from typing import Any, List, Optional
 from sqlalchemy.future import select
 from datetime import datetime, date, timedelta
 
@@ -28,12 +28,12 @@ async def get_templates(
 @router.post("/", response_model=SuccessResponse)
 async def create_template(
     name: str,
-    description: str = None,
+    description: Optional[str] = None,
     db: AsyncSession = Depends(get_db), 
     current_user: User = Depends(get_current_user)
 ) -> Any:
     temp_data = {"user_id": current_user.id, "name": name, "description": description}
-    temp = Template(**temp_data)
+    temp = Template(**temp_data)  # type: ignore
     db.add(temp)
     await db.commit()
     await db.refresh(temp)
@@ -73,7 +73,7 @@ async def apply_template(
             "activity_type": ta.activity_type,
             "is_recurring": True
         }
-        new_act = Activity(**act_data)
+        new_act = Activity(**act_data)  # type: ignore
         db.add(new_act)
         await db.flush() # get id
         
@@ -86,7 +86,7 @@ async def apply_template(
             "custom_times": new_times,
             "start_date": apply_date
         }
-        new_rule = RecurrenceRule(**rule_data)
+        new_rule = RecurrenceRule(**rule_data)  # type: ignore
         db.add(new_rule)
         created_count += 1
         

@@ -16,20 +16,21 @@ async def create_workout_session(
     db: AsyncSession = Depends(get_db),
     current_user: User = Depends(get_current_user)
 ):
-    session = WorkoutSession(
-        user_id=current_user.id,
-        activity_occurrence_id=workout_in.activity_occurrence_id,
-        workout_type=workout_in.workout_type,
-        date=workout_in.date,
-        start_time=workout_in.start_time,
-        end_time=workout_in.end_time,
-        duration_minutes=workout_in.duration_minutes,
-        distance_km=workout_in.distance_km,
-        pace=workout_in.pace,
-        calories=workout_in.calories,
-        notes=workout_in.notes,
-        status=workout_in.status
-    )
+    session_data = {
+        "user_id": current_user.id,
+        "activity_occurrence_id": workout_in.activity_occurrence_id,
+        "workout_type": workout_in.workout_type,
+        "date": workout_in.date,
+        "start_time": workout_in.start_time,
+        "end_time": workout_in.end_time,
+        "duration_minutes": workout_in.duration_minutes,
+        "distance_km": workout_in.distance_km,
+        "pace": workout_in.pace,
+        "calories": workout_in.calories,
+        "notes": workout_in.notes,
+        "status": workout_in.status
+    }
+    session = WorkoutSession(**session_data)  # type: ignore
     db.add(session)
     await db.commit()
     await db.refresh(session)
