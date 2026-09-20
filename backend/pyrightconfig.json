@@ -1,0 +1,12 @@
+{
+    "reportCallIssue": false,
+    "reportGeneralTypeIssues": false,
+    "reportAttributeAccessIssue": false,
+    "reportArgumentType": false,
+    "reportAssignmentType": false,
+    "reportReturnType": false,
+    "reportIncompatibleVariableOverride": false,
+    "reportMissingModuleSource": false,
+    "reportIndexIssue": false,
+    "reportInvalidTypeForm": false
+}

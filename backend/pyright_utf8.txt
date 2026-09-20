@@ -1,0 +1,293 @@
+﻿d:\Projects\Shaik\backend\app\api\activities.py
+  d:\Projects\Shaik\backend\app\api\activities.py:9:94 - error: "ActivityResponse" is unknown import symbol (reportAttributeAccessIssue)
+d:\Projects\Shaik\backend\app\api\auth.py
+  d:\Projects\Shaik\backend\app\api\auth.py:26:9 - error: No parameter named "email" (reportCallIssue)
+  d:\Projects\Shaik\backend\app\api\auth.py:27:9 - error: No parameter named "name" (reportCallIssue)
+  d:\Projects\Shaik\backend\app\api\auth.py:28:9 - error: No parameter named "password_hash" (reportCallIssue)
+  d:\Projects\Shaik\backend\app\api\auth.py:29:9 - error: No parameter named "timezone" (reportCallIssue)
+  d:\Projects\Shaik\backend\app\api\auth.py:30:9 - error: No parameter named "week_start" (reportCallIssue)
+  d:\Projects\Shaik\backend\app\api\auth.py:31:9 - error: No parameter named "time_format" (reportCallIssue)
+  d:\Projects\Shaik\backend\app\api\auth.py:47:60 - error: Argument of type "Column[str]" cannot be assigned to parameter "hashed_password" of type "str" in function "verify_password"
+  ┬á┬á"Column[str]" is not assignable to "str" (reportArgumentType)
+d:\Projects\Shaik\backend\app\api\exercises.py
+  d:\Projects\Shaik\backend\app\api\exercises.py:28:9 - error: No parameter named "user_id" (reportCallIssue)
+  d:\Projects\Shaik\backend\app\api\exercises.py:29:9 - error: No parameter named "name" (reportCallIssue)
+  d:\Projects\Shaik\backend\app\api\exercises.py:30:9 - error: No parameter named "category" (reportCallIssue)
+d:\Projects\Shaik\backend\app\api\projects.py
+  d:\Projects\Shaik\backend\app\api\projects.py:20:9 - error: No parameter named "user_id" (reportCallIssue)
+  d:\Projects\Shaik\backend\app\api\projects.py:21:9 - error: No parameter named "name" (reportCallIssue)
+  d:\Projects\Shaik\backend\app\api\projects.py:22:9 - error: No parameter named "description" (reportCallIssue)
+  d:\Projects\Shaik\backend\app\api\projects.py:23:9 - error: No parameter named "status" (reportCallIssue)
+  d:\Projects\Shaik\backend\app\api\projects.py:24:9 - error: No parameter named "priority" (reportCallIssue)
+  d:\Projects\Shaik\backend\app\api\projects.py:25:9 - error: No parameter named "start_date" (reportCallIssue)
+  d:\Projects\Shaik\backend\app\api\projects.py:26:9 - error: No parameter named "deadline" (reportCallIssue)
+d:\Projects\Shaik\backend\app\api\schedule.py
+  d:\Projects\Shaik\backend\app\api\schedule.py:9:134 - error: "ActivityOccurrenceResponse" is unknown import symbol (reportAttributeAccessIssue)
+  d:\Projects\Shaik\backend\app\api\schedule.py:82:13 - error: Cannot assign to attribute "is_override" for class "ActivityOccurrenceUpdate"
+  ┬á┬áAttribute "is_override" is unknown (reportAttributeAccessIssue)
+d:\Projects\Shaik\backend\app\api\templates.py
+  d:\Projects\Shaik\backend\app\api\templates.py:31:24 - error: Expression of type "None" cannot be assigned to parameter of type "str"
+  ┬á┬á"None" is not assignable to "str" (reportArgumentType)
+  d:\Projects\Shaik\backend\app\api\templates.py:35:21 - error: No parameter named "user_id" (reportCallIssue)
+  d:\Projects\Shaik\backend\app\api\templates.py:35:46 - error: No parameter named "name" (reportCallIssue)
+  d:\Projects\Shaik\backend\app\api\templates.py:35:57 - error: No parameter named "description" (reportCallIssue)
+  d:\Projects\Shaik\backend\app\api\templates.py:69:13 - error: No parameter named "user_id" (reportCallIssue)
+  d:\Projects\Shaik\backend\app\api\templates.py:70:13 - error: No parameter named "title" (reportCallIssue)
+  d:\Projects\Shaik\backend\app\api\templates.py:71:13 - error: No parameter named "category_id" (reportCallIssue)
+  d:\Projects\Shaik\backend\app\api\templates.py:72:13 - error: No parameter named "activity_type" (reportCallIssue)
+  d:\Projects\Shaik\backend\app\api\templates.py:73:13 - error: No parameter named "is_recurring" (reportCallIssue)
+  d:\Projects\Shaik\backend\app\api\templates.py:81:13 - error: No parameter named "activity_id" (reportCallIssue)
+  d:\Projects\Shaik\backend\app\api\templates.py:82:13 - error: No parameter named "frequency" (reportCallIssue)
+  d:\Projects\Shaik\backend\app\api\templates.py:83:13 - error: No parameter named "days_of_week" (reportCallIssue)
+  d:\Projects\Shaik\backend\app\api\templates.py:84:13 - error: No parameter named "custom_times" (reportCallIssue)
+  d:\Projects\Shaik\backend\app\api\templates.py:85:13 - error: No parameter named "start_date" (reportCallIssue)
+d:\Projects\Shaik\backend\app\api\workouts.py
+  d:\Projects\Shaik\backend\app\api\workouts.py:20:9 - error: No parameter named "user_id" (reportCallIssue)
+  d:\Projects\Shaik\backend\app\api\workouts.py:21:9 - error: No parameter named "activity_occurrence_id" (reportCallIssue)
+  d:\Projects\Shaik\backend\app\api\workouts.py:22:9 - error: No parameter named "workout_type" (reportCallIssue)
+  d:\Projects\Shaik\backend\app\api\workouts.py:23:9 - error: No parameter named "date" (reportCallIssue)
+  d:\Projects\Shaik\backend\app\api\workouts.py:24:9 - error: No parameter named "start_time" (reportCallIssue)
+  d:\Projects\Shaik\backend\app\api\workouts.py:25:9 - error: No parameter named "end_time" (reportCallIssue)
+  d:\Projects\Shaik\backend\app\api\workouts.py:26:9 - error: No parameter named "duration_minutes" (reportCallIssue)
+  d:\Projects\Shaik\backend\app\api\workouts.py:27:9 - error: No parameter named "distance_km" (reportCallIssue)
+  d:\Projects\Shaik\backend\app\api\workouts.py:28:9 - error: No parameter named "pace" (reportCallIssue)
+  d:\Projects\Shaik\backend\app\api\workouts.py:29:9 - error: No parameter named "calories" (reportCallIssue)
+  d:\Projects\Shaik\backend\app\api\workouts.py:30:9 - error: No parameter named "notes" (reportCallIssue)
+  d:\Projects\Shaik\backend\app\api\workouts.py:31:9 - error: No parameter named "status" (reportCallIssue)
+d:\Projects\Shaik\backend\app\core\dependencies.py
+  d:\Projects\Shaik\backend\app\core\dependencies.py:3:6 - warning: Import "jose" could not be resolved from source (reportMissingModuleSource)
+  d:\Projects\Shaik\backend\app\core\dependencies.py:3:18 - warning: Import "jose.jwt" could not be resolved from source (reportMissingModuleSource)
+  d:\Projects\Shaik\backend\app\core\dependencies.py:24:28 - error: Type "Any | None" is not assignable to declared type "str"
+  ┬á┬áType "Any | None" is not assignable to type "str"
+  ┬á┬á┬á┬á"None" is not assignable to "str" (reportAssignmentType)
+d:\Projects\Shaik\backend\app\core\security.py
+  d:\Projects\Shaik\backend\app\core\security.py:16:58 - error: Expression of type "None" cannot be assigned to parameter of type "timedelta"
+  ┬á┬á"None" is not assignable to "timedelta" (reportArgumentType)
+d:\Projects\Shaik\backend\app\db\base.py
+  d:\Projects\Shaik\backend\app\db\base.py:10:6 - error: Argument of type "(cls: Self@Base) -> str" cannot be assigned to parameter "fn" of type "_DeclaredAttrDecorated[_T_co@declared_attr]" in function "__init__"
+  ┬á┬áType "(cls: Self@Base) -> str" is not assignable to type "_DeclaredAttrDecorated[_T_co@declared_attr]"
+  ┬á┬á┬á┬áFunction return type "str" is incompatible with type "Mapped[_T_co@declared_attr] | ORMDescriptor[_T_co@declared_attr] | SQLCoreOperations[_T_co@declared_attr]"
+  ┬á┬á┬á┬á┬á┬áType "str" is not assignable to type "Mapped[_T_co@declared_attr] | ORMDescriptor[_T_co@declared_attr] | SQLCoreOperations[_T_co@declared_attr]"
+  ┬á┬á┬á┬á┬á┬á┬á┬á"str" is not assignable to "Mapped[_T_co@declared_attr]"
+  ┬á┬á┬á┬á┬á┬á┬á┬á"str" is not assignable to "ORMDescriptor[_T_co@declared_attr]"
+  ┬á┬á┬á┬á┬á┬á┬á┬á"str" is not assignable to "SQLCoreOperations[_T_co@declared_attr]" (reportArgumentType)
+d:\Projects\Shaik\backend\app\db\database.py
+  d:\Projects\Shaik\backend\app\db\database.py:8:21 - error: No overloads for "__init__" match the provided arguments (reportCallIssue)
+  d:\Projects\Shaik\backend\app\db\database.py:9:5 - error: Argument of type "AsyncEngine" cannot be assigned to parameter "bind" of type "_SessionBind | None" in function "__init__"
+  ┬á┬áType "AsyncEngine" is not assignable to type "_SessionBind | None"
+  ┬á┬á┬á┬á"AsyncEngine" is not assignable to "Engine"
+  ┬á┬á┬á┬á"AsyncEngine" is not assignable to "Connection"
+  ┬á┬á┬á┬á"AsyncEngine" is not assignable to "None" (reportArgumentType)
+  d:\Projects\Shaik\backend\app\db\database.py:13:16 - error: Object of type "Session" cannot be used with "async with" because it does not correctly implement __aenter__
+  ┬á┬áAttribute "__aenter__" is unknown (reportGeneralTypeIssues)
+  d:\Projects\Shaik\backend\app\db\database.py:13:16 - error: Object of type "Session" cannot be used with "with" because it does not correctly implement __aexit__
+  ┬á┬áAttribute "__aexit__" is unknown (reportGeneralTypeIssues)
+d:\Projects\Shaik\backend\app\main.py
+  d:\Projects\Shaik\backend\app\main.py:29:55 - error: Argument of type "(request: Request[State], exc: HTTPException) -> CoroutineType[Any, Any, JSONResponse]" cannot be assigned to parameter "handler" of type "ExceptionHandler" in function "add_exception_handler"
+  ┬á┬áType "(request: Request[State], exc: HTTPException) -> CoroutineType[Any, Any, JSONResponse]" is not assignable to type "ExceptionHandler"
+  ┬á┬á┬á┬áType "(request: Request[State], exc: HTTPException) -> CoroutineType[Any, Any, JSONResponse]" is not assignable to type "HTTPExceptionHandler"
+  ┬á┬á┬á┬á┬á┬áParameter 2: type "Exception" is incompatible with type "HTTPException"
+  ┬á┬á┬á┬á┬á┬á┬á┬á"Exception" is not assignable to "HTTPException"
+  ┬á┬á┬á┬áType "(request: Request[State], exc: HTTPException) -> CoroutineType[Any, Any, JSONResponse]" is not assignable to type "WebSocketExceptionHandler"
+  ┬á┬á┬á┬á┬á┬áParameter 1: type "WebSocket[State]" is incompatible with type "Request[State]"
+  ┬á┬á┬á┬á┬á┬á┬á┬á"WebSocket[State]" is not assignable to "Request[State]"
+  ┬á┬á┬á┬á┬á┬áParameter 2: type "Exception" is incompatible with type "HTTPException"
+    ... (reportArgumentType)
+  d:\Projects\Shaik\backend\app\main.py:30:55 - error: Argument of type "(request: Request[State], exc: RequestValidationError) -> CoroutineType[Any, Any, JSONResponse]" cannot be assigned to parameter "handler" of type "ExceptionHandler" in function "add_exception_handler"
+  ┬á┬áType "(request: Request[State], exc: RequestValidationError) -> CoroutineType[Any, Any, JSONResponse]" is not assignable to type "ExceptionHandler"
+  ┬á┬á┬á┬áType "(request: Request[State], exc: RequestValidationError) -> CoroutineType[Any, Any, JSONResponse]" is not assignable to type "HTTPExceptionHandler"
+  ┬á┬á┬á┬á┬á┬áParameter 2: type "Exception" is incompatible with type "RequestValidationError"
+  ┬á┬á┬á┬á┬á┬á┬á┬á"Exception" is not assignable to "RequestValidationError"
+  ┬á┬á┬á┬áType "(request: Request[State], exc: RequestValidationError) -> CoroutineType[Any, Any, JSONResponse]" is not assignable to type "WebSocketExceptionHandler"
+  ┬á┬á┬á┬á┬á┬áParameter 1: type "WebSocket[State]" is incompatible with type "Request[State]"
+  ┬á┬á┬á┬á┬á┬á┬á┬á"WebSocket[State]" is not assignable to "Request[State]"
+  ┬á┬á┬á┬á┬á┬áParameter 2: type "Exception" is incompatible with type "RequestValidationError"
+    ... (reportArgumentType)
+d:\Projects\Shaik\backend\app\models\activity.py
+  d:\Projects\Shaik\backend\app\models\activity.py:6:21 - error: Type "Literal['activities']" is not assignable to declared type "declared_attr[Unknown]"
+  ┬á┬á"Literal['activities']" is not assignable to "declared_attr[Unknown]" (reportAssignmentType)
+d:\Projects\Shaik\backend\app\models\category.py
+  d:\Projects\Shaik\backend\app\models\category.py:6:21 - error: Type "Literal['categories']" is not assignable to declared type "declared_attr[Unknown]"
+  ┬á┬á"Literal['categories']" is not assignable to "declared_attr[Unknown]" (reportAssignmentType)
+d:\Projects\Shaik\backend\app\models\exercise.py
+  d:\Projects\Shaik\backend\app\models\exercise.py:7:21 - error: Type "Literal['exercises']" is not assignable to declared type "declared_attr[Unknown]"
+  ┬á┬á"Literal['exercises']" is not assignable to "declared_attr[Unknown]" (reportAssignmentType)
+  d:\Projects\Shaik\backend\app\models\exercise.py:18:21 - error: Type "Literal['workout_exercises']" is not assignable to declared type "declared_attr[Unknown]"
+  ┬á┬á"Literal['workout_exercises']" is not assignable to "declared_attr[Unknown]" (reportAssignmentType)
+  d:\Projects\Shaik\backend\app\models\exercise.py:30:21 - error: Type "Literal['workout_sets']" is not assignable to declared type "declared_attr[Unknown]"
+  ┬á┬á"Literal['workout_sets']" is not assignable to "declared_attr[Unknown]" (reportAssignmentType)
+  d:\Projects\Shaik\backend\app\models\exercise.py:44:21 - error: Type "Literal['workout_templates']" is not assignable to declared type "declared_attr[Unknown]"
+  ┬á┬á"Literal['workout_templates']" is not assignable to "declared_attr[Unknown]" (reportAssignmentType)
+d:\Projects\Shaik\backend\app\models\occurrence.py
+  d:\Projects\Shaik\backend\app\models\occurrence.py:6:21 - error: Type "Literal['activity_occurrences']" is not assignable to declared type "declared_attr[Unknown]"
+  ┬á┬á"Literal['activity_occurrences']" is not assignable to "declared_attr[Unknown]" (reportAssignmentType)
+d:\Projects\Shaik\backend\app\models\project.py
+  d:\Projects\Shaik\backend\app\models\project.py:15:21 - error: Type "Literal['projects']" is not assignable to declared type "declared_attr[Unknown]"
+  ┬á┬á"Literal['projects']" is not assignable to "declared_attr[Unknown]" (reportAssignmentType)
+d:\Projects\Shaik\backend\app\models\recurrence.py
+  d:\Projects\Shaik\backend\app\models\recurrence.py:6:21 - error: Type "Literal['recurrence_rules']" is not assignable to declared type "declared_attr[Unknown]"
+  ┬á┬á"Literal['recurrence_rules']" is not assignable to "declared_attr[Unknown]" (reportAssignmentType)
+d:\Projects\Shaik\backend\app\models\task.py
+  d:\Projects\Shaik\backend\app\models\task.py:6:21 - error: Type "Literal['tasks']" is not assignable to declared type "declared_attr[Unknown]"
+  ┬á┬á"Literal['tasks']" is not assignable to "declared_attr[Unknown]" (reportAssignmentType)
+d:\Projects\Shaik\backend\app\models\template.py
+  d:\Projects\Shaik\backend\app\models\template.py:6:21 - error: Type "Literal['templates']" is not assignable to declared type "declared_attr[Unknown]"
+  ┬á┬á"Literal['templates']" is not assignable to "declared_attr[Unknown]" (reportAssignmentType)
+  d:\Projects\Shaik\backend\app\models\template.py:20:21 - error: Type "Literal['template_activities']" is not assignable to declared type "declared_attr[Unknown]"
+  ┬á┬á"Literal['template_activities']" is not assignable to "declared_attr[Unknown]" (reportAssignmentType)
+d:\Projects\Shaik\backend\app\models\user.py
+  d:\Projects\Shaik\backend\app\models\user.py:6:21 - error: Type "Literal['users']" is not assignable to declared type "declared_attr[Unknown]"
+  ┬á┬á"Literal['users']" is not assignable to "declared_attr[Unknown]" (reportAssignmentType)
+d:\Projects\Shaik\backend\app\models\workout.py
+  d:\Projects\Shaik\backend\app\models\workout.py:16:21 - error: Type "Literal['workout_sessions']" is not assignable to declared type "declared_attr[Unknown]"
+  ┬á┬á"Literal['workout_sessions']" is not assignable to "declared_attr[Unknown]" (reportAssignmentType)
+d:\Projects\Shaik\backend\app\schemas\__init__.py
+  d:\Projects\Shaik\backend\app\schemas\__init__.py:1:37 - error: "UserLogin" is unknown import symbol (reportAttributeAccessIssue)
+  d:\Projects\Shaik\backend\app\schemas\__init__.py:1:48 - error: "UserResponse" is unknown import symbol (reportAttributeAccessIssue)
+  d:\Projects\Shaik\backend\app\schemas\__init__.py:1:62 - error: "Token" is unknown import symbol (reportAttributeAccessIssue)
+  d:\Projects\Shaik\backend\app\schemas\__init__.py:1:69 - error: "TokenPayload" is unknown import symbol (reportAttributeAccessIssue)
+d:\Projects\Shaik\backend\app\schemas\activity.py
+  d:\Projects\Shaik\backend\app\schemas\activity.py:68:20 - error: Type of "date" could not be determined because it refers to itself (reportGeneralTypeIssues)
+  d:\Projects\Shaik\backend\app\schemas\activity.py:68:20 - error: Variable not allowed in type expression (reportInvalidTypeForm)
+d:\Projects\Shaik\backend\app\schemas\project.py
+  d:\Projects\Shaik\backend\app\schemas\project.py:17:5 - error: "name" overrides symbol of same name in class "ProjectBase"
+  ┬á┬áVariable is mutable so its type is invariant
+  ┬á┬á┬á┬áOverride type "str | None" is not the same as base type "str" (reportIncompatibleVariableOverride)
+d:\Projects\Shaik\backend\app\schemas\workout.py
+  d:\Projects\Shaik\backend\app\schemas\workout.py:20:5 - error: "set_number" overrides symbol of same name in class "WorkoutSetBase"
+  ┬á┬áVariable is mutable so its type is invariant
+  ┬á┬á┬á┬áOverride type "int | None" is not the same as base type "int" (reportIncompatibleVariableOverride)
+  d:\Projects\Shaik\backend\app\schemas\workout.py:39:5 - error: "exercise_name" overrides symbol of same name in class "WorkoutExerciseBase"
+  ┬á┬áVariable is mutable so its type is invariant
+  ┬á┬á┬á┬áOverride type "str | None" is not the same as base type "str" (reportIncompatibleVariableOverride)
+  d:\Projects\Shaik\backend\app\schemas\workout.py:70:5 - error: "date" overrides symbol of same name in class "WorkoutSessionBase"
+  ┬á┬áVariable is mutable so its type is invariant
+  ┬á┬á┬á┬áOverride type "Unknown | None" is not the same as base type "date" (reportIncompatibleVariableOverride)
+  d:\Projects\Shaik\backend\app\schemas\workout.py:70:20 - error: Type of "date" could not be determined because it refers to itself (reportGeneralTypeIssues)
+  d:\Projects\Shaik\backend\app\schemas\workout.py:70:20 - error: Variable not allowed in type expression (reportInvalidTypeForm)
+  d:\Projects\Shaik\backend\app\schemas\workout.py:70:28 - error: Type "None" is not assignable to declared type "date"
+  ┬á┬á"None" is not assignable to "date" (reportAssignmentType)
+  d:\Projects\Shaik\backend\app\schemas\workout.py:71:5 - error: "workout_type" overrides symbol of same name in class "WorkoutSessionBase"
+  ┬á┬áVariable is mutable so its type is invariant
+  ┬á┬á┬á┬áOverride type "WorkoutType | None" is not the same as base type "WorkoutType" (reportIncompatibleVariableOverride)
+d:\Projects\Shaik\backend\app\services\activity_service.py
+  d:\Projects\Shaik\backend\app\services\activity_service.py:13:46 - error: No parameter named "user_id" (reportCallIssue)
+  d:\Projects\Shaik\backend\app\services\activity_service.py:22:16 - error: Type "Sequence[Activity]" is not assignable to return type "list[Activity]"
+  ┬á┬á"Sequence[Activity]" is not assignable to "list[Activity]" (reportReturnType)
+d:\Projects\Shaik\backend\app\services\analytics_service.py
+  d:\Projects\Shaik\backend\app\services\analytics_service.py:23:45 - error: Invalid conditional operand of type "ColumnElement[bool]"
+  ┬á┬áMethod __bool__ for type "ColumnElement[bool]" returns type "NoReturn" rather than "bool" (reportGeneralTypeIssues)
+  d:\Projects\Shaik\backend\app\services\analytics_service.py:25:59 - error: Invalid conditional operand of type "ColumnElement[bool]"
+  ┬á┬áMethod __bool__ for type "ColumnElement[bool]" returns type "NoReturn" rather than "bool" (reportGeneralTypeIssues)
+  d:\Projects\Shaik\backend\app\services\analytics_service.py:26:57 - error: Invalid conditional operand of type "ColumnElement[bool]"
+  ┬á┬áMethod __bool__ for type "ColumnElement[bool]" returns type "NoReturn" rather than "bool" (reportGeneralTypeIssues)
+  d:\Projects\Shaik\backend\app\services\analytics_service.py:40:50 - error: Invalid conditional operand of type "ColumnElement[bool]"
+  ┬á┬áMethod __bool__ for type "ColumnElement[bool]" returns type "NoReturn" rather than "bool" (reportGeneralTypeIssues)
+  d:\Projects\Shaik\backend\app\services\analytics_service.py:42:57 - error: Invalid conditional operand of type "ColumnElement[bool]"
+  ┬á┬áMethod __bool__ for type "ColumnElement[bool]" returns type "NoReturn" rather than "bool" (reportGeneralTypeIssues)
+  d:\Projects\Shaik\backend\app\services\analytics_service.py:43:55 - error: Invalid conditional operand of type "ColumnElement[bool]"
+  ┬á┬áMethod __bool__ for type "ColumnElement[bool]" returns type "NoReturn" rather than "bool" (reportGeneralTypeIssues)
+d:\Projects\Shaik\backend\app\services\category_service.py
+  d:\Projects\Shaik\backend\app\services\category_service.py:11:13 - error: No parameter named "name" (reportCallIssue)
+  d:\Projects\Shaik\backend\app\services\category_service.py:12:13 - error: No parameter named "description" (reportCallIssue)
+  d:\Projects\Shaik\backend\app\services\category_service.py:13:13 - error: No parameter named "icon" (reportCallIssue)
+  d:\Projects\Shaik\backend\app\services\category_service.py:14:13 - error: No parameter named "user_id" (reportCallIssue)
+  d:\Projects\Shaik\backend\app\services\category_service.py:24:16 - error: Type "Sequence[Category]" is not assignable to return type "list[Category]"
+  ┬á┬á"Sequence[Category]" is not assignable to "list[Category]" (reportReturnType)
+d:\Projects\Shaik\backend\app\services\recurrence_service.py
+  d:\Projects\Shaik\backend\app\services\recurrence_service.py:49:58 - error: Invalid conditional operand of type "Column[date]"
+  ┬á┬áMethod __bool__ for type "Column[date]" returns type "NoReturn" rather than "bool" (reportGeneralTypeIssues)
+  d:\Projects\Shaik\backend\app\services\recurrence_service.py:53:19 - error: Invalid conditional operand of type "bool | ColumnElement[bool]"
+  ┬á┬áMethod __bool__ for type "ColumnElement[bool]" returns type "NoReturn" rather than "bool" (reportGeneralTypeIssues)
+  d:\Projects\Shaik\backend\app\services\recurrence_service.py:59:20 - error: Invalid conditional operand of type "ColumnElement[bool]"
+  ┬á┬áMethod __bool__ for type "ColumnElement[bool]" returns type "NoReturn" rather than "bool" (reportGeneralTypeIssues)
+  d:\Projects\Shaik\backend\app\services\recurrence_service.py:61:22 - error: Invalid conditional operand of type "ColumnElement[bool] | bool | Any"
+  ┬á┬áMethod __bool__ for type "ColumnElement[bool]" returns type "NoReturn" rather than "bool" (reportGeneralTypeIssues)
+  d:\Projects\Shaik\backend\app\services\recurrence_service.py:63:22 - error: Invalid conditional operand of type "ColumnElement[bool] | bool | Any"
+  ┬á┬áMethod __bool__ for type "ColumnElement[bool]" returns type "NoReturn" rather than "bool" (reportGeneralTypeIssues)
+  d:\Projects\Shaik\backend\app\services\recurrence_service.py:65:22 - error: Invalid conditional operand of type "ColumnElement[bool]"
+  ┬á┬áMethod __bool__ for type "ColumnElement[bool]" returns type "NoReturn" rather than "bool" (reportGeneralTypeIssues)
+  d:\Projects\Shaik\backend\app\services\recurrence_service.py:71:20 - error: Invalid conditional operand of type "Column[Any] | bool | <subclass of Column[Any] and list>"
+  ┬á┬áMethod __bool__ for type "Column[Any]" returns type "NoReturn" rather than "bool"
+  ┬á┬áMethod __bool__ for type "<subclass of Column[Any] and list>" returns type "NoReturn" rather than "bool" (reportGeneralTypeIssues)
+  d:\Projects\Shaik\backend\app\services\recurrence_service.py:76:20 - error: Invalid conditional operand of type "Column[Any] | bool | <subclass of Column[Any] and dict>"
+  ┬á┬áMethod __bool__ for type "Column[Any]" returns type "NoReturn" rather than "bool"
+  ┬á┬áMethod __bool__ for type "<subclass of Column[Any] and dict>" returns type "NoReturn" rather than "bool" (reportGeneralTypeIssues)
+  d:\Projects\Shaik\backend\app\services\recurrence_service.py:88:29 - error: No parameter named "activity_id" (reportCallIssue)
+  d:\Projects\Shaik\backend\app\services\recurrence_service.py:89:29 - error: No parameter named "user_id" (reportCallIssue)
+  d:\Projects\Shaik\backend\app\services\recurrence_service.py:90:29 - error: No parameter named "date" (reportCallIssue)
+  d:\Projects\Shaik\backend\app\services\recurrence_service.py:91:29 - error: No parameter named "start_time" (reportCallIssue)
+  d:\Projects\Shaik\backend\app\services\recurrence_service.py:92:29 - error: No parameter named "end_time" (reportCallIssue)
+  d:\Projects\Shaik\backend\app\services\recurrence_service.py:93:29 - error: No parameter named "original_start_time" (reportCallIssue)
+  d:\Projects\Shaik\backend\app\services\recurrence_service.py:94:29 - error: No parameter named "original_end_time" (reportCallIssue)
+  d:\Projects\Shaik\backend\app\services\recurrence_service.py:95:29 - error: No parameter named "status" (reportCallIssue)
+  d:\Projects\Shaik\backend\app\services\recurrence_service.py:96:29 - error: No parameter named "is_override" (reportCallIssue)
+  d:\Projects\Shaik\backend\app\services\recurrence_service.py:97:29 - error: No parameter named "is_deleted" (reportCallIssue)
+  d:\Projects\Shaik\backend\app\services\recurrence_service.py:122:14 - error: Cannot assign to attribute "end_date" for class "RecurrenceRule"
+  ┬á┬áExpression of type "ColumnElement[Any]" cannot be assigned to attribute "end_date" of class "RecurrenceRule"
+  ┬á┬á┬á┬á"ColumnElement[Any]" is not assignable to "Column[date]" (reportAttributeAccessIssue)
+  d:\Projects\Shaik\backend\app\services\recurrence_service.py:126:13 - error: No parameter named "user_id" (reportCallIssue)
+  d:\Projects\Shaik\backend\app\services\recurrence_service.py:127:13 - error: No parameter named "title" (reportCallIssue)
+  d:\Projects\Shaik\backend\app\services\recurrence_service.py:128:13 - error: No parameter named "description" (reportCallIssue)
+  d:\Projects\Shaik\backend\app\services\recurrence_service.py:129:13 - error: No parameter named "category_id" (reportCallIssue)
+  d:\Projects\Shaik\backend\app\services\recurrence_service.py:130:13 - error: No parameter named "activity_type" (reportCallIssue)
+  d:\Projects\Shaik\backend\app\services\recurrence_service.py:131:13 - error: No parameter named "default_duration_minutes" (reportCallIssue)
+  d:\Projects\Shaik\backend\app\services\recurrence_service.py:132:13 - error: No parameter named "is_recurring" (reportCallIssue)
+  d:\Projects\Shaik\backend\app\services\recurrence_service.py:133:13 - error: No parameter named "icon" (reportCallIssue)
+  d:\Projects\Shaik\backend\app\services\recurrence_service.py:133:27 - error: Cannot access attribute "icon" for class "Activity"
+  ┬á┬áAttribute "icon" is unknown (reportAttributeAccessIssue)
+  d:\Projects\Shaik\backend\app\services\recurrence_service.py:140:57 - error: Invalid conditional operand of type "Column[Any]"
+  ┬á┬áMethod __bool__ for type "Column[Any]" returns type "NoReturn" rather than "bool" (reportGeneralTypeIssues)
+  d:\Projects\Shaik\backend\app\services\recurrence_service.py:143:9 - error: "__setitem__" method not defined on type "Column[Any]" (reportIndexIssue)
+  d:\Projects\Shaik\backend\app\services\recurrence_service.py:149:13 - error: No parameter named "activity_id" (reportCallIssue)
+  d:\Projects\Shaik\backend\app\services\recurrence_service.py:150:13 - error: No parameter named "frequency" (reportCallIssue)
+  d:\Projects\Shaik\backend\app\services\recurrence_service.py:151:13 - error: No parameter named "interval" (reportCallIssue)
+  d:\Projects\Shaik\backend\app\services\recurrence_service.py:152:13 - error: No parameter named "days_of_week" (reportCallIssue)
+  d:\Projects\Shaik\backend\app\services\recurrence_service.py:153:13 - error: No parameter named "custom_times" (reportCallIssue)
+  d:\Projects\Shaik\backend\app\services\recurrence_service.py:154:13 - error: No parameter named "start_date" (reportCallIssue)
+  d:\Projects\Shaik\backend\app\services\recurrence_service.py:155:13 - error: No parameter named "end_date" (reportCallIssue)
+  d:\Projects\Shaik\backend\app\services\recurrence_service.py:175:113 - error: Expression of type "None" cannot be assigned to parameter of type "date"
+  ┬á┬á"None" is not assignable to "date" (reportArgumentType)
+d:\Projects\Shaik\backend\app\services\schedule_service.py
+  d:\Projects\Shaik\backend\app\services\schedule_service.py:16:13 - error: No parameter named "user_id" (reportCallIssue)
+  d:\Projects\Shaik\backend\app\services\schedule_service.py:17:13 - error: No parameter named "original_start_time" (reportCallIssue)
+  d:\Projects\Shaik\backend\app\services\schedule_service.py:18:13 - error: No parameter named "original_end_time" (reportCallIssue)
+  d:\Projects\Shaik\backend\app\services\schedule_service.py:27:16 - error: Type "ActivityOccurrence | None" is not assignable to return type "ActivityOccurrence"
+  ┬á┬áType "ActivityOccurrence | None" is not assignable to type "ActivityOccurrence"
+  ┬á┬á┬á┬á"None" is not assignable to "ActivityOccurrence" (reportReturnType)
+  d:\Projects\Shaik\backend\app\services\schedule_service.py:41:16 - error: Type "Sequence[ActivityOccurrence]" is not assignable to return type "list[ActivityOccurrence]"
+  ┬á┬á"Sequence[ActivityOccurrence]" is not assignable to "list[ActivityOccurrence]" (reportReturnType)
+  d:\Projects\Shaik\backend\app\services\schedule_service.py:57:17 - error: Cannot assign to attribute "is_override" for class "ActivityOccurrence"
+  ┬á┬áExpression of type "Literal[True]" cannot be assigned to attribute "is_override" of class "ActivityOccurrence"
+  ┬á┬á┬á┬á"Literal[True]" is not assignable to "Column[bool]" (reportAttributeAccessIssue)
+  d:\Projects\Shaik\backend\app\services\schedule_service.py:60:16 - error: Invalid conditional operand of type "Any | ColumnElement[bool]"
+  ┬á┬áMethod __bool__ for type "ColumnElement[bool]" returns type "NoReturn" rather than "bool" (reportGeneralTypeIssues)
+  d:\Projects\Shaik\backend\app\services\schedule_service.py:61:21 - error: Cannot assign to attribute "completed_at" for class "ActivityOccurrence"
+  ┬á┬áExpression of type "datetime" cannot be assigned to attribute "completed_at" of class "ActivityOccurrence"
+  ┬á┬á┬á┬á"datetime" is not assignable to "Column[datetime]" (reportAttributeAccessIssue)
+  d:\Projects\Shaik\backend\app\services\schedule_service.py:62:18 - error: Invalid conditional operand of type "Any | ColumnElement[bool] | Literal[False]"
+  ┬á┬áMethod __bool__ for type "ColumnElement[bool]" returns type "NoReturn" rather than "bool" (reportGeneralTypeIssues)
+  d:\Projects\Shaik\backend\app\services\schedule_service.py:63:21 - error: Cannot assign to attribute "completed_at" for class "ActivityOccurrence"
+  ┬á┬áExpression of type "None" cannot be assigned to attribute "completed_at" of class "ActivityOccurrence"
+  ┬á┬á┬á┬á"None" is not assignable to "Column[datetime]" (reportAttributeAccessIssue)
+  d:\Projects\Shaik\backend\app\services\schedule_service.py:75:16 - error: Type "ActivityOccurrence | None" is not assignable to return type "ActivityOccurrence"
+  ┬á┬áType "ActivityOccurrence | None" is not assignable to type "ActivityOccurrence"
+  ┬á┬á┬á┬á"None" is not assignable to "ActivityOccurrence" (reportReturnType)
+  d:\Projects\Shaik\backend\app\services\schedule_service.py:84:13 - error: Cannot assign to attribute "is_deleted" for class "ActivityOccurrence"
+  ┬á┬áExpression of type "Literal[True]" cannot be assigned to attribute "is_deleted" of class "ActivityOccurrence"
+  ┬á┬á┬á┬á"Literal[True]" is not assignable to "Column[bool]" (reportAttributeAccessIssue)
+d:\Projects\Shaik\backend\app\services\task_service.py
+  d:\Projects\Shaik\backend\app\services\task_service.py:11:39 - error: No parameter named "user_id" (reportCallIssue)
+  d:\Projects\Shaik\backend\app\services\task_service.py:21:16 - error: Type "Sequence[Task]" is not assignable to return type "list[Task]"
+  ┬á┬á"Sequence[Task]" is not assignable to "list[Task]" (reportReturnType)
+  d:\Projects\Shaik\backend\app\services\task_service.py:39:16 - error: Invalid conditional operand of type "Any | ColumnElement[bool]"
+  ┬á┬áMethod __bool__ for type "ColumnElement[bool]" returns type "NoReturn" rather than "bool" (reportGeneralTypeIssues)
+  d:\Projects\Shaik\backend\app\services\task_service.py:40:22 - error: Cannot assign to attribute "completed_at" for class "Task"
+  ┬á┬áExpression of type "datetime" cannot be assigned to attribute "completed_at" of class "Task"
+  ┬á┬á┬á┬á"datetime" is not assignable to "Column[datetime]" (reportAttributeAccessIssue)
+  d:\Projects\Shaik\backend\app\services\task_service.py:41:18 - error: Invalid conditional operand of type "Any | ColumnElement[bool] | Literal[False]"
+  ┬á┬áMethod __bool__ for type "ColumnElement[bool]" returns type "NoReturn" rather than "bool" (reportGeneralTypeIssues)
+  d:\Projects\Shaik\backend\app\services\task_service.py:42:22 - error: Cannot assign to attribute "completed_at" for class "Task"
+  ┬á┬áExpression of type "None" cannot be assigned to attribute "completed_at" of class "Task"
+  ┬á┬á┬á┬á"None" is not assignable to "Column[datetime]" (reportAttributeAccessIssue)
+152 errors, 2 warnings, 0 informations

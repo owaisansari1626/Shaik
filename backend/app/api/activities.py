@@ -6,7 +6,7 @@ from typing import Any, List
 from app.db.database import get_db
 from app.models.user import User
 from app.models.activity import Activity
-from app.schemas.activity import ActivityCreate, ActivityUpdate, Activity as ActivitySchema, ActivityResponse, RecurrenceRuleCreate
+from app.schemas.activity import ActivityCreate, ActivityUpdate, Activity as ActivitySchema, RecurrenceRuleCreate
 from app.core.dependencies import get_current_user
 from app.core.responses import SuccessResponse
 from app.models.recurrence import RecurrenceRule
@@ -43,7 +43,7 @@ async def read_activity(
     activity = await ActivityService.get_activity(db, id, current_user.id)
     return SuccessResponse(data=activity, message="Activity retrieved")
 
-@router.patch("/{activity_id}", response_model=ActivityResponse)
+@router.patch("/{activity_id}", response_model=SuccessResponse[ActivitySchema])
 async def update_activity(
     activity_id: int, 
     activity_in: ActivityUpdate, 

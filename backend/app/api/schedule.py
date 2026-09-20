@@ -6,7 +6,7 @@ from pydantic import BaseModel
 
 from app.db.database import get_db
 from app.models.user import User
-from app.schemas.activity import ActivityOccurrenceCreate, ActivityOccurrenceUpdate, ActivityOccurrence as ActivityOccurrenceSchema, ActivityOccurrenceResponse
+from app.schemas.activity import ActivityOccurrenceCreate, ActivityOccurrenceUpdate, ActivityOccurrence as ActivityOccurrenceSchema
 from app.core.dependencies import get_current_user
 from app.core.responses import SuccessResponse, ErrorResponse
 from app.services.schedule_service import ScheduleService

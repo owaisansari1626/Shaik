@@ -84,18 +84,19 @@ class RecurrenceService:
                     
                 if generate:
                     if (rule.activity_id, curr) not in existing_map:
-                        new_occ = ActivityOccurrence(
-                            activity_id=rule.activity_id,
-                            user_id=user_id,
-                            date=curr,
-                            start_time=start_t,
-                            end_time=end_t,
-                            original_start_time=start_t,
-                            original_end_time=end_t,
-                            status="SCHEDULED",
-                            is_override=False,
-                            is_deleted=False
-                        )
+                        occ_data = {
+                            "activity_id": rule.activity_id,
+                            "user_id": user_id,
+                            "date": curr,
+                            "start_time": start_t,
+                            "end_time": end_t,
+                            "original_start_time": start_t,
+                            "original_end_time": end_t,
+                            "status": "SCHEDULED",
+                            "is_override": False,
+                            "is_deleted": False
+                        }
+                        new_occ = ActivityOccurrence(**occ_data)
                         new_occurrences.append(new_occ)
 
                 curr += datetime.timedelta(days=1)
@@ -122,16 +123,17 @@ class RecurrenceService:
         rule.end_date = occ.date - datetime.timedelta(days=1)
         
         # Create new activity and rule
-        new_act = Activity(
-            user_id=user_id,
-            title=activity.title,
-            description=activity.description,
-            category_id=activity.category_id,
-            activity_type=activity.activity_type,
-            default_duration_minutes=activity.default_duration_minutes,
-            is_recurring=True,
-            icon=activity.icon
-        )
+        act_data = {
+            "user_id": user_id,
+            "title": activity.title,
+            "description": activity.description,
+            "category_id": activity.category_id,
+            "activity_type": activity.activity_type,
+            "default_duration_minutes": activity.default_duration_minutes,
+            "is_recurring": True,
+            "icon": activity.icon
+        }
+        new_act = Activity(**act_data)
         db.add(new_act)
         await db.flush() # get new_act.id
         
@@ -145,15 +147,16 @@ class RecurrenceService:
             "end_time": new_end_time
         }
         
-        new_rule = RecurrenceRule(
-            activity_id=new_act.id,
-            frequency=rule.frequency,
-            interval=rule.interval,
-            days_of_week=rule.days_of_week,
-            custom_times=new_times,
-            start_date=occ.date,
-            end_date=None
-        )
+        rule_data = {
+            "activity_id": new_act.id,
+            "frequency": rule.frequency,
+            "interval": rule.interval,
+            "days_of_week": rule.days_of_week,
+            "custom_times": new_times,
+            "start_date": occ.date,
+            "end_date": None
+        }
+        new_rule = RecurrenceRule(**rule_data)
         db.add(new_rule)
         
         # Delete future untouched occurrences of the old rule so the new rule regenerates them

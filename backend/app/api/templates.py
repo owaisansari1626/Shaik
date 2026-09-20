@@ -32,7 +32,8 @@ async def create_template(
     db: AsyncSession = Depends(get_db), 
     current_user: User = Depends(get_current_user)
 ) -> Any:
-    temp = Template(user_id=current_user.id, name=name, description=description)
+    temp_data = {"user_id": current_user.id, "name": name, "description": description}
+    temp = Template(**temp_data)
     db.add(temp)
     await db.commit()
     await db.refresh(temp)
@@ -65,25 +66,27 @@ async def apply_template(
     created_count = 0
     for ta in template.activities:
         # Create an Activity
-        new_act = Activity(
-            user_id=current_user.id,
-            title=ta.title,
-            category_id=ta.category_id,
-            activity_type=ta.activity_type,
-            is_recurring=True
-        )
+        act_data = {
+            "user_id": current_user.id,
+            "title": ta.title,
+            "category_id": ta.category_id,
+            "activity_type": ta.activity_type,
+            "is_recurring": True
+        }
+        new_act = Activity(**act_data)
         db.add(new_act)
         await db.flush() # get id
         
         # Apply the recurrence mapped strictly to that day
         new_times = {str(ta.day_of_week): {"start_time": str(ta.start_time), "end_time": str(ta.end_time)}}
-        new_rule = RecurrenceRule(
-            activity_id=new_act.id,
-            frequency="WEEKLY",
-            days_of_week=[ta.day_of_week],
-            custom_times=new_times,
-            start_date=apply_date
-        )
+        rule_data = {
+            "activity_id": new_act.id,
+            "frequency": "WEEKLY",
+            "days_of_week": [ta.day_of_week],
+            "custom_times": new_times,
+            "start_date": apply_date
+        }
+        new_rule = RecurrenceRule(**rule_data)
         db.add(new_rule)
         created_count += 1
         

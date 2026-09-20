@@ -1,6 +1,6 @@
 import pytest
 from unittest.mock import AsyncMock
-from app.services.activities_service import scheduleService
+from app.services.schedule_service import ScheduleService
 from app.schemas.activity import ActivityOccurrenceUpdate
 
 @pytest.mark.asyncio

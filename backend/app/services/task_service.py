@@ -8,7 +8,9 @@ from app.schemas.task import TaskCreate, TaskUpdate
 class TaskService:
     @staticmethod
     async def create_task(db: AsyncSession, task_in: TaskCreate, user_id: int) -> Task:
-        task = Task(**task_in.dict(), user_id=user_id)
+        data = task_in.dict()
+        data["user_id"] = user_id
+        task = Task(**data)
         db.add(task)
         await db.commit()
         await db.refresh(task)

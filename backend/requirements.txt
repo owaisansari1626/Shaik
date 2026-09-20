@@ -10,3 +10,5 @@ passlib
 bcrypt
 PyJWT
 python-multipart
+aiosqlite
+python-jose[cryptography]
