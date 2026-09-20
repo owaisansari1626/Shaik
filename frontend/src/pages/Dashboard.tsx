@@ -1,6 +1,6 @@
 import React from 'react';
 import { useQuery } from '@tanstack/react-query';
-import { format, addDays, subDays } from 'date-fns';
+import { format, subDays } from 'date-fns';
 import { CheckCircle2, Clock, CheckSquare } from 'lucide-react';
 import { BarChart, Bar, XAxis, YAxis, Tooltip, ResponsiveContainer, CartesianGrid } from 'recharts';
 import { useAuth } from '../hooks/useAuth';
@@ -108,7 +108,7 @@ export const Dashboard: React.FC = () => {
                                 <p className="text-slate-500">No scheduled activities for today.</p>
                             ) : (
                                 <div className="relative border-l-2 border-slate-200 dark:border-slate-800 ml-4 space-y-8 py-2">
-                                    {todayOccurrences.sort((a, b) => a.start_time.localeCompare(b.start_time)).map((occ, i) => (
+                                    {todayOccurrences.sort((a, b) => a.start_time.localeCompare(b.start_time)).map((occ) => (
                                         <div key={occ.id} className="relative pl-6">
                                             <div className="absolute w-4 h-4 bg-white dark:bg-slate-900 border-2 border-indigo-500 rounded-full -left-[9px] top-1"></div>
                                             <div className="flex justify-between items-start">

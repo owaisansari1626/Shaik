@@ -1,12 +1,8 @@
-import React, { useState } from 'react';
+import React from 'react';
 import { useQuery } from '@tanstack/react-query';
 import { workoutsService } from '../services/workouts.service';
 import { PlayIcon, HomeIcon, ClockIcon, FireIcon } from '@heroicons/react/24/outline';
-import { Link } from 'react-router-dom';
-
 const Workouts: React.FC = () => {
-    const [view, setView] = useState<'DASHBOARD' | 'HISTORY'>('DASHBOARD');
-
     const { data: workouts, isLoading } = useQuery({
         queryKey: ['workouts'],
         queryFn: workoutsService.getSessions

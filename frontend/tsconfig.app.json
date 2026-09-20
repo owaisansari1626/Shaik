@@ -22,7 +22,6 @@
     "noUnusedParameters": true,
     "noFallthroughCasesInSwitch": true,
     /* Paths alias for Shadcn */
-    "baseUrl": ".",
     "paths": {
       "@/*": [
         "./src/*"

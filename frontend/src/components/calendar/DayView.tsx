@@ -7,7 +7,6 @@ export const DayView: React.FC<CalendarViewProps> = ({ occurrences, selectedDate
     // DayView displays the currently selected date.
     const dayOccurrences = occurrences.filter(o => o.date === format(selectedDate, 'yyyy-MM-dd'));
 
-    const planned = dayOccurrences.filter(o => o.status === 'SCHEDULED').length;
     const completed = dayOccurrences.filter(o => o.status === 'COMPLETED').length;
     const progress = dayOccurrences.length > 0 ? Math.round((completed / dayOccurrences.length) * 100) : 0;
 

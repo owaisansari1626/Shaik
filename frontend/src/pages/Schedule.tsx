@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { useQuery, useMutation, useQueryClient } from '@tanstack/react-query';
 import { format } from 'date-fns';
-import { Calendar, ChevronLeft, ChevronRight, Clock, Plus, X } from 'lucide-react';
+import { ChevronLeft, ChevronRight, Clock, X } from 'lucide-react';
 import { useDateContext } from '../store/DateContext';
 import { scheduleService } from '../services/activities.service';
 

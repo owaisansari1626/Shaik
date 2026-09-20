@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { useQuery, useMutation, useQueryClient } from '@tanstack/react-query';
-import { Folder, Plus, Trash2, Edit2, Check, X } from 'lucide-react';
+import { Folder, Plus, Trash2 } from 'lucide-react';
 import { categoriesService } from '../services/categories.service';
 import { Category } from '../types';
 

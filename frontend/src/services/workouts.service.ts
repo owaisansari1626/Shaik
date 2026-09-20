@@ -1,42 +1,42 @@
 import api from './api';
 
 export interface Exercise {
-    id: int;
-    user_id: int;
+    id: number;
+    user_id: number;
     name: string;
     category?: string;
     created_at: string;
 }
 
 export interface WorkoutSet {
-    id?: int;
-    set_number: int;
-    reps?: int;
+    id?: number;
+    set_number: number;
+    reps?: number;
     weight?: number;
-    duration?: int;
-    rest_seconds?: int;
+    duration?: number;
+    rest_seconds?: number;
     completed: boolean;
 }
 
 export interface WorkoutExercise {
-    id?: int;
+    id?: number;
     exercise_name: string;
-    exercise_order: int;
+    exercise_order: number;
     notes?: string;
     sets: WorkoutSet[];
 }
 
 export interface WorkoutSession {
-    id: int;
-    activity_occurrence_id?: int;
+    id: number;
+    activity_occurrence_id?: number;
     workout_type: 'GYM' | 'RUNNING' | 'WALKING' | 'CYCLING' | 'SPORT' | 'OTHER';
     date: string;
     start_time?: string;
     end_time?: string;
-    duration_minutes?: int;
+    duration_minutes?: number;
     distance_km?: number;
     pace?: number;
-    calories?: int;
+    calories?: number;
     notes?: string;
     status: string;
     exercises: WorkoutExercise[];

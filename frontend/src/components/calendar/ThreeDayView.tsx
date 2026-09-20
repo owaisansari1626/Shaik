@@ -1,7 +1,7 @@
 import React from 'react';
 import { format, addDays, isSameDay } from 'date-fns';
 import { CalendarViewProps } from './CalendarTypes';
-import { WeekView } from './WeekView';
+// WeekView removed
 
 export const ThreeDayView: React.FC<CalendarViewProps> = (props) => {
     // 3-Day View is functionally identical to WeekView, just rendered with a 3-day array.

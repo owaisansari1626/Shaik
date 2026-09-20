@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Outlet, NavLink, useNavigate, useLocation } from 'react-router-dom';
+import { Outlet, NavLink, useNavigate } from 'react-router-dom';
 import { Home, Calendar as CalendarIcon, CheckSquare, Settings as SettingsIcon, LogOut, Menu, X, Plus, Activity, Clock, Layers, Flame, Folder } from 'lucide-react';
 import { useAuth } from '../hooks/useAuth';
 import { useShortcuts } from '../hooks/useShortcuts';
@@ -7,7 +7,7 @@ import { useShortcuts } from '../hooks/useShortcuts';
 export const AppLayout: React.FC = () => {
     const { user, logout } = useAuth();
     const navigate = useNavigate();
-    const location = useLocation();
+    // location removed
     const [sidebarOpen, setSidebarOpen] = useState(false);
     const [quickAddOpen, setQuickAddOpen] = useState(false);
 

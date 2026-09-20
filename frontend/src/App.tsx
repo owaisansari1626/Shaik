@@ -13,7 +13,7 @@ import { Settings } from './pages/Settings';
 import { Activities } from './pages/Activities';
 import { Schedule } from './pages/Schedule';
 import { Calendar } from './pages/Calendar';
-import { Categories } from './pages/Categories';
+// Categories removed
 import { Templates } from './pages/Templates';
 import Workouts from './pages/Workouts';
 import Projects from './pages/Projects';
@@ -51,7 +51,7 @@ export default function App() {
               <Route path="tasks" element={<Tasks />} />
               <Route path="schedule" element={<Schedule />} />
               <Route path="activities" element={<Activities />} />
-              <Route path="categories" element={<Categories />} />
+              {/* Categories moved to settings */}
               <Route path="workouts" element={<Workouts />} />
               <Route path="projects" element={<Projects />} />
               <Route path="projects/:id" element={<ProjectKanban />} />

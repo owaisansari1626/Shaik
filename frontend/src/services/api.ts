@@ -1,3 +1,4 @@
+/// <reference types="vite/client" />
 // frontend/src/services/api.ts
 const API_URL = import.meta.env.VITE_API_URL || 'http://localhost:8000';
 
@@ -9,9 +10,9 @@ export class ApiError extends Error {
 
 export const fetchApi = async (endpoint: string, options: RequestInit = {}) => {
     const token = localStorage.getItem('token');
-    const headers: HeadersInit = {
+    const headers: Record<string, string> = {
         'Content-Type': 'application/json',
-        ...options.headers,
+        ...(options.headers as Record<string, string>),
     };
 
     if (token) {
@@ -40,3 +41,12 @@ export const fetchApi = async (endpoint: string, options: RequestInit = {}) => {
 
     return data;
 };
+
+const api = {
+    get: (endpoint: string) => fetchApi(endpoint, { method: 'GET' }),
+    post: (endpoint: string, data: any) => fetchApi(endpoint, { method: 'POST', body: JSON.stringify(data) }),
+    patch: (endpoint: string, data: any) => fetchApi(endpoint, { method: 'PATCH', body: JSON.stringify(data) }),
+    delete: (endpoint: string) => fetchApi(endpoint, { method: 'DELETE' }),
+};
+
+export default api;

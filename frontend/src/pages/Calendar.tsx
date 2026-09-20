@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { useQuery, useMutation, useQueryClient } from '@tanstack/react-query';
-import { format, startOfWeek, addDays, subWeeks, addWeeks, subDays, startOfMonth, endOfMonth, endOfWeek, isSameDay } from 'date-fns';
-import { Calendar as CalendarIcon, ChevronLeft, ChevronRight, X, Search, Filter } from 'lucide-react';
+import { format, startOfWeek, addDays, subWeeks, addWeeks, subDays, startOfMonth, endOfMonth, endOfWeek } from 'date-fns';
+import { Calendar as CalendarIcon, ChevronLeft, ChevronRight, Search, Filter } from 'lucide-react';
 import { scheduleService } from '../services/activities.service';
 import { useDateContext } from '../store/DateContext';
 
@@ -151,7 +151,6 @@ export const Calendar: React.FC = () => {
         const durationMinutes = (endH * 60 + endM) - (startH * 60 + startM);
 
         const newStartH = targetHour;
-        const newStartM = 0;
         const newStartStr = `${newStartH.toString().padStart(2, '0')}:00:00`;
 
         const totalNewEndMinutes = newStartH * 60 + durationMinutes;

@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { useQuery, useMutation, useQueryClient } from '@tanstack/react-query';
-import { Copy, Plus, Activity as ActivityIcon, Check } from 'lucide-react';
+import { Copy, Plus } from 'lucide-react';
 import { fetchApi } from '../services/api';
 import { format } from 'date-fns';
 
@@ -116,7 +116,7 @@ export const Templates: React.FC = () => {
                                         disabled={applyMutation.isPending && applyingId === tpl.id}
                                         className="w-full sm:w-auto px-4 py-1.5 bg-slate-800 text-white font-bold rounded-lg hover:bg-slate-700 disabled:opacity-50 text-sm whitespace-nowrap"
                                     >
-                                        Apply From Date ->
+                                        Apply From Date -&gt;
                                     </button>
                                 </div>
                             </div>

@@ -1,8 +1,8 @@
 import api from './api';
 
 export interface Project {
-    id: int;
-    user_id: int;
+    id: number;
+    user_id: number;
     name: string;
     description?: string;
     status: 'PLANNED' | 'ACTIVE' | 'ON_HOLD' | 'COMPLETED' | 'ARCHIVED';

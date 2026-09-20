@@ -11,7 +11,7 @@ export const Activities: React.FC = () => {
 
     const [title, setTitle] = useState('');
     const [activityType, setActivityType] = useState('GENERAL');
-    const [categoryId, setCategoryId] = useState<number | ''>('');
+    const [categoryId, setCategoryId] = useState<string>('');
     const [date, setDate] = useState(format(new Date(), 'yyyy-MM-dd'));
     const [startTime, setStartTime] = useState('09:00');
     const [endTime, setEndTime] = useState('10:00');

@@ -1,8 +1,8 @@
-import React, { useState } from 'react';
+import React from 'react';
 import { useParams, useNavigate } from 'react-router-dom';
 import { useQuery, useMutation, useQueryClient } from '@tanstack/react-query';
 import { projectsService } from '../services/projects.service';
-import { tasksService } from '../services/api'; // Assuming tasks are managed via main API
+// tasksService removed
 import { ArrowLeftIcon, PlusIcon, EllipsisHorizontalIcon } from '@heroicons/react/24/outline';
 
 const ProjectKanban: React.FC = () => {
